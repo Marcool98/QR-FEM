@@ -1,0 +1,103 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 15px; */
+  /* 15px / 16px = 0.9375 = 93.75% */
+  font-size: 93.75%;
+  overflow-x: hidden;
+  /* Dos NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  /* Only works if there is nothinga absolutely positioned
+   in relation to body*/
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  width: 100%;
+  background-color: hsl(212, 45%, 89%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20rem 5rem;
+  box-shadow: 0 1rem 50px #ddd;
+}
+
+.qr {
+  width: 15rem;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem;
+  border-radius: 5%;
+  gap: 1rem;
+  padding: 0.5rem 1rem 1rem 1rem;
+  box-shadow: 0 1rem 2rem #eee;
+}
+
+.qr-img {
+  width: 14rem;
+  height: auto;
+  border-radius: 5%;
+}
+
+h2 {
+  color: hsl(218, 44%, 22%);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: hsl(220, 15%, 55%);
+}
